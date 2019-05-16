@@ -12,7 +12,6 @@
 		D7A55FAC2280D1BD0069A4A2 /* UIView+Layout.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A55FAB2280D1BD0069A4A2 /* UIView+Layout.swift */; };
 		D7A55FB02280DF140069A4A2 /* VerticalStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7A55FAF2280DF140069A4A2 /* VerticalStackView.swift */; };
 		D7AAEB9A22729DAE00F89A35 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AAEB9922729DAE00F89A35 /* AppDelegate.swift */; };
-		D7AAEB9C22729DAE00F89A35 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7AAEB9B22729DAE00F89A35 /* ViewController.swift */; };
 		D7AAEBA222729DAE00F89A35 /* AppStore.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D7AAEBA022729DAE00F89A35 /* AppStore.xcdatamodeld */; };
 		D7AAEBA422729DB000F89A35 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D7AAEBA322729DB000F89A35 /* Assets.xcassets */; };
 		D7D99F942277AA5100FFDB97 /* AppsSearchController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7D99F932277AA5100FFDB97 /* AppsSearchController.swift */; };
@@ -25,7 +24,6 @@
 		D7A55FAF2280DF140069A4A2 /* VerticalStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerticalStackView.swift; sourceTree = "<group>"; };
 		D7AAEB9622729DAE00F89A35 /* AppStore.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AppStore.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D7AAEB9922729DAE00F89A35 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		D7AAEB9B22729DAE00F89A35 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D7AAEBA122729DAE00F89A35 /* AppStore.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = AppStore.xcdatamodel; sourceTree = "<group>"; };
 		D7AAEBA322729DB000F89A35 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D7AAEBA822729DB000F89A35 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 		D7D99F922277AA3300FFDB97 /* Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				D7AAEB9B22729DAE00F89A35 /* ViewController.swift */,
 				D77FF48B2273EF7500CAD422 /* BaseTabBarController.swift */,
 				D7D99F932277AA5100FFDB97 /* AppsSearchController.swift */,
 			);
@@ -171,7 +168,6 @@
 			files = (
 				D77FF48C2273EF7500CAD422 /* BaseTabBarController.swift in Sources */,
 				D7AAEBA222729DAE00F89A35 /* AppStore.xcdatamodeld in Sources */,
-				D7AAEB9C22729DAE00F89A35 /* ViewController.swift in Sources */,
 				D7D99F942277AA5100FFDB97 /* AppsSearchController.swift in Sources */,
 				D70A6377227B973600D7EA82 /* SearchResultCell.swift in Sources */,
 				D7A55FB02280DF140069A4A2 /* VerticalStackView.swift in Sources */,
