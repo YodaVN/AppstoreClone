@@ -11,16 +11,6 @@ import UIKit
 class AppsSearchController: UICollectionViewController, UICollectionViewDelegateFlowLayout {
     private let cellId = "id123"
     
-    struct SearchResult: Decodable {
-        let resultCount: Int
-        let results: [Result]
-    }
-    
-    struct Result: Decodable {
-        let trackName: String
-        let primaryGenreName: String
-    }
-    
     init() {
         super.init(collectionViewLayout: UICollectionViewFlowLayout())
     }
@@ -54,10 +44,13 @@ class AppsSearchController: UICollectionViewController, UICollectionViewDelegate
                 return
             }
             
-            JSONDecoder().decode(SearchResult.self, from: data)
-            
-            
-            
+            do {
+                let searchResult = try JSONDecoder().decode(SearchResult.self, from: data)
+                print(searchResult)
+            } catch let error as NSError {
+                print("Failed to decode json:", error)
+            }
+   
         }.resume()
     }
     
