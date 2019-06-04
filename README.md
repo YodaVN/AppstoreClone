@@ -14,3 +14,5 @@ Core concepts:
 > SDWebImage Caching,
 > Snapping Flow Layout,
 > Generics
+
+![GitHub Logo](https://i.imgur.com/f2V9mI9.png)
