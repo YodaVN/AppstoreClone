@@ -81,8 +81,8 @@
 		D7AAEB9822729DAE00F89A35 /* AppStore */ = {
 			isa = PBXGroup;
 			children = (
-				D7D2A9D522A39AB900AB8C25 /* Service */,
 				D7AAEB9922729DAE00F89A35 /* AppDelegate.swift */,
+				D7D2A9D522A39AB900AB8C25 /* Service */,
 				D7F6305F22A0688000CAFE05 /* Model */,
 				D7A55FAA2280D16D0069A4A2 /* Helpers */,
 				D53593E122793C6400D4BC87 /* Views */,

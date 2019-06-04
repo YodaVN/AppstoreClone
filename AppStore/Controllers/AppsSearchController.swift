@@ -31,7 +31,18 @@ class AppsSearchController: UICollectionViewController, UICollectionViewDelegate
     fileprivate var appResults = [Result]()
     
     fileprivate func fetchItunesApps() {
-        Service.shared.fetchApps()
+        Service.shared.fetchApps { (results, err) in
+            if let err = err {
+                print("Failed to fetch apps:", err)
+                
+                return
+            }
+            
+            self.appResults = results
+            DispatchQueue.main.async {
+                self.collectionView.reloadData()
+            }
+        }
     }
     
     override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int {

@@ -11,7 +11,7 @@ import Foundation
 class Service {
     static let shared = Service()
     
-    func fetchApps() {
+    func fetchApps(completion: @escaping ([Result], Error?) -> ()) {
         let urlString = "https://itunes.apple.com/search?term=instagram&entity=software"
         guard let url = URL(string: urlString) else {
             return
@@ -20,6 +20,8 @@ class Service {
         URLSession.shared.dataTask(with: url) { (data, resp, err) in
             if let err = err {
                 print("Failed to fetch apps:", err)
+                completion([], nil)
+                
                 return
             }
             
@@ -29,9 +31,11 @@ class Service {
             
             do {
                 let searchResult = try JSONDecoder().decode(SearchResult.self, from: data)
+                completion(searchResult.results, nil)
 
             } catch let error as NSError {
                 print("Failed to decode json:", error)
+                completion([], error)
             }
             
             }.resume()
