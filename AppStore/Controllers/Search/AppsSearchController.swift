@@ -9,7 +9,7 @@
 import UIKit
 import SDWebImage
 
-class AppsSearchController: UICollectionViewController, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
+class AppsSearchController: BaseListController, UICollectionViewDelegateFlowLayout, UISearchBarDelegate {
     var timer: Timer?
     private let cellId = "id123"
     private let searchController = UISearchController(searchResultsController: nil)
@@ -22,14 +22,6 @@ class AppsSearchController: UICollectionViewController, UICollectionViewDelegate
         label.font = UIFont.boldSystemFont(ofSize: 20)
         return label
     }()
-    
-    init() {
-        super.init(collectionViewLayout: UICollectionViewFlowLayout())
-    }
-    
-    required init?(coder aDecoder: NSCoder) {
-        fatalError("init(coder:) has not been implemented")
-    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
